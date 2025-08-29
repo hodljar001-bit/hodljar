@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">HODLJAR - The Treasure Hunter's Meme Coin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🏺</span>
+                <span class="brand-text">HODLJAR</span>
+            </div>
+            
+            <div class="nav-menu">
+                <button class="nav-link active" data-section="home" data-translate="home">Home</button>
+                <button class="nav-link" data-section="about" data-translate="about">About</button>
+                <button class="nav-link" data-section="tokenomics" data-translate="tokenomics">Tokenomics</button>
+                <button class="nav-link" data-section="treasuresweeper" data-translate="treasureSweeper">TreasureSweeper</button>
+                <button class="nav-link" data-section="community" data-translate="community">Community</button>
+            </div>
+            
+            <div class="nav-actions">
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">🇺🇸 EN</button>
+                    <button class="lang-btn" data-lang="ru">🇷🇺 RU</button>
+                </div>
+                <button class="btn btn--primary" id="connect-wallet" data-translate="connectWallet">Connect Wallet</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="page-section active">
+        <div class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="treasure-icon">🏺</span>
+                        HODLJAR
+                    </h1>
+                    <p class="hero-subtitle" data-translate="tagline">HODL your way to digital treasure</p>
+                    <p class="hero-description" data-translate="aboutDesc1">HODLJAR combines the legendary HODL mentality with the thrill of treasure hunting in the digital age. Our gamified ecosystem rewards patient investors and active community members through on-chain treasure hunts and exclusive NFT artifacts.</p>
+                    
+                    <div class="hero-actions">
+                        <button class="btn btn--primary btn--lg" data-translate="joinTreasureHunt">Join the Treasure Hunt</button>
+                        <button class="btn btn--outline btn--lg game-btn" data-section="treasuresweeper" data-translate="treasureSweeper">TreasureSweeper</button>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-value">$0.00142</div>
+                            <div class="stat-label">Price</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">$142,000</div>
+                            <div class="stat-label">Market Cap</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">15,847</div>
+                            <div class="stat-label">Holders</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">23,456</div>
+                            <div class="stat-label">Community</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="page-section">
+        <div class="container">
+            <h2 data-translate="about">About HODLJAR</h2>
+            <div class="about-content">
+                <p data-translate="aboutDesc1">HODLJAR combines the legendary HODL mentality with the thrill of treasure hunting in the digital age. Our gamified ecosystem rewards patient investors and active community members through on-chain treasure hunts and exclusive NFT artifacts.</p>
+                <p data-translate="aboutDesc2">Built on Solana for lightning-fast transactions and low fees, HODLJAR creates a unique social experience where every holder becomes an explorer in search of digital riches.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="page-section">
+        <div class="container">
+            <h2 data-translate="tokenomics">Tokenomics</h2>
+            <div class="tokenomics-content">
+                <div class="token-supply">
+                    <h3 data-translate="totalSupply">Total Supply</h3>
+                    <div class="supply-value">100,000,000 JAR</div>
+                </div>
+                
+                <div class="distribution-chart">
+                    <div class="distribution-item">
+                        <div class="distribution-bar">
+                            <div class="bar-fill" style="width: 40%; background: var(--color-bg-1)"></div>
+                        </div>
+                        <div class="distribution-info">
+                            <span class="percentage">40%</span>
+                            <span class="label" data-translate="communityRewards">Community Rewards & Missions</span>
+                        </div>
+                    </div>
+                    
+                    <div class="distribution-item">
+                        <div class="distribution-bar">
+                            <div class="bar-fill" style="width: 30%; background: var(--color-bg-2)"></div>
+                        </div>
+                        <div class="distribution-info">
+                            <span class="percentage">30%</span>
+                            <span class="label" data-translate="liquidityExchange">Liquidity & Exchange Listings</span>
+                        </div>
+                    </div>
+                    
+                    <div class="distribution-item">
+                        <div class="distribution-bar">
+                            <div class="bar-fill" style="width: 15%; background: var(--color-bg-3)"></div>
+                        </div>
+                        <div class="distribution-info">
+                            <span class="percentage">15%</span>
+                            <span class="label" data-translate="teamAllocation">Team (locked 12 months)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="distribution-item">
+                        <div class="distribution-bar">
+                            <div class="bar-fill" style="width: 10%; background: var(--color-bg-4)"></div>
+                        </div>
+                        <div class="distribution-info">
+                            <span class="percentage">10%</span>
+                            <span class="label" data-translate="marketingPartnerships">Marketing & Partnerships</span>
+                        </div>
+                    </div>
+                    
+                    <div class="distribution-item">
+                        <div class="distribution-bar">
+                            <div class="bar-fill" style="width: 5%; background: var(--color-bg-5)"></div>
+                        </div>
+                        <div class="distribution-info">
+                            <span class="percentage">5%</span>
+                            <span class="label" data-translate="treasuryDevelopment">Treasury & Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TreasureSweeper Section -->
+    <section id="treasuresweeper" class="page-section">
+        <!-- Game Menu Screen -->
+        <div id="game-menu" class="game-screen">
+            <div class="container">
+                <header class="game-header">
+                    <h2 class="game-title" data-translate="gameTitle">TreasureSweeper Game</h2>
+                    <p class="game-subtitle" data-translate="gameSubtitle">Find the treasure, avoid the traps!</p>
+                    
+                    <div class="daily-quest-card">
+                        <h3 data-translate="dailyQuest">Daily Quest</h3>
+                        <p id="daily-quest-text">Find 3 chests without mistakes</p>
+                        <div class="quest-progress">
+                            <span data-translate="questProgress">Quest Progress</span>: <span id="quest-progress">0/3</span>
+                        </div>
+                    </div>
+                    
+                    <div class="difficulty-selection">
+                        <h3 data-translate="difficulty">Difficulty</h3>
+                        <div class="difficulty-buttons">
+                            <button class="difficulty-btn selected" data-difficulty="explorer">
+                                <span class="difficulty-icon">🔍</span>
+                                <div class="difficulty-info">
+                                    <span class="difficulty-name" data-translate="explorer">Explorer</span>
+                                    <span class="difficulty-desc">9×9 • 8 traps • 5 chests</span>
+                                </div>
+                            </button>
+                            
+                            <button class="difficulty-btn" data-difficulty="adventurer">
+                                <span class="difficulty-icon">⚔️</span>
+                                <div class="difficulty-info">
+                                    <span class="difficulty-name" data-translate="adventurer">Adventurer</span>
+                                    <span class="difficulty-desc">12×12 • 20 traps • 10 chests</span>
+                                </div>
+                            </button>
+                            
+                            <button class="difficulty-btn" data-difficulty="legend">
+                                <span class="difficulty-icon">👑</span>
+                                <div class="difficulty-info">
+                                    <span class="difficulty-name" data-translate="legend">Legend</span>
+                                    <span class="difficulty-desc">16×16 • 35 traps • 15 chests</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="game-menu-buttons">
+                        <button id="start-game-btn" class="btn btn--primary btn--lg" data-translate="startGame">Start Game</button>
+                        <button class="btn btn--secondary" data-translate="backToSite">Back to HODLJAR</button>
+                    </div>
+                </header>
+            </div>
+        </div>
+        
+        <!-- Game Playing Screen -->
+        <div id="game-playing" class="game-screen hidden">
+            <div class="container">
+                <div class="game-interface">
+                    <div class="game-header-bar">
+                        <button id="back-to-game-menu" class="btn btn--outline btn--sm">Game Menu</button>
+                        
+                        <div class="game-stats">
+                            <div class="stat-item">
+                                <span class="stat-icon">📦</span>
+                                <span data-translate="chestsFound">Chests Found</span>: <span id="chests-found">0</span>/<span id="total-chests">5</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-icon">💣</span>
+                                <span data-translate="trapsLeft">Traps Left</span>: <span id="traps-left">8</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-icon">⏱️</span>
+                                <span data-translate="time">Time</span>: <span id="game-timer">00:00</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-icon">⭐</span>
+                                <span data-translate="score">Score</span>: <span id="current-score">0</span>
+                            </div>
+                        </div>
+                        
+                        <button id="new-game-btn" class="btn btn--primary btn--sm" data-translate="newGame">New Game</button>
+                    </div>
+                    
+                    <div class="power-ups-panel">
+                        <h4 data-translate="powerUps">Power-Ups</h4>
+                        <div class="power-ups-list">
+                            <button id="lantern-btn" class="power-up-btn" data-powerup="lantern">
+                                <span class="power-up-icon">🔦</span>
+                                <span class="power-up-name" data-translate="lantern">Lantern</span>
+                                <span class="power-up-uses">1</span>
+                            </button>
+                            
+                            <button id="ancient-map-btn" class="power-up-btn" data-powerup="ancientMap">
+                                <span class="power-up-icon">🗺️</span>
+                                <span class="power-up-name" data-translate="ancientMap">Ancient Map</span>
+                                <span class="power-up-uses">1</span>
+                            </button>
+                            
+                            <button id="explorers-rope-btn" class="power-up-btn" data-powerup="explorersRope">
+                                <span class="power-up-icon">🪢</span>
+                                <span class="power-up-name" data-translate="explorersRope">Explorer's Rope</span>
+                                <span class="power-up-uses">1</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="game-board-container">
+                        <div id="game-board" class="game-board"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="page-section">
+        <div class="container">
+            <h2 data-translate="community">Community</h2>
+            <div class="community-content">
+                <p>Join our growing community of treasure hunters and HODL enthusiasts!</p>
+                <div class="community-links">
+                    <a href="#" target="_blank" class="community-link">
+                        <span class="link-icon">📱</span>
+                        <span>Telegram</span>
+                    </a>
+                    <a href="#" target="_blank" class="community-link">
+                        <span class="link-icon">🐦</span>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="#" target="_blank" class="community-link">
+                        <span class="link-icon">💬</span>
+                        <span>Discord</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Game Modal -->
+    <div id="end-game-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="end-game-title">Game Over!</h3>
+            </div>
+            <div class="modal-body">
+                <div class="end-game-stats">
+                    <div class="final-score">
+                        <span data-translate="finalScore">Final Score</span>: <span id="final-score">0</span>
+                    </div>
+                    <div class="game-time">
+                        <span data-translate="time">Time</span>: <span id="final-time">00:00</span>
+                    </div>
+                    <div class="chests-collected">
+                        <span data-translate="chestsFound">Chests Found</span>: <span id="final-chests">0</span>
+                    </div>
+                </div>
+                
+                <div class="end-game-actions">
+                    <button id="play-again-btn" class="btn btn--primary" data-translate="playAgain">Play Again</button>
+                    <button id="back-to-site-btn" class="btn btn--secondary" data-translate="backToSite">Back to HODLJAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wallet Connected Modal -->
+    <div id="wallet-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Connect Wallet</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="wallet-options">
+                    <button class="wallet-option" data-wallet="phantom">
+                        <span class="wallet-icon">👻</span>
+                        <span>Phantom</span>
+                    </button>
+                    <button class="wallet-option" data-wallet="solflare">
+                        <span class="wallet-icon">☀️</span>
+                        <span>Solflare</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
