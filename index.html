@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">HODLJAR - The Treasure Hunter's Meme Coin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">💰</span>
+                    <span class="logo-text">HODLJAR</span>
+                </div>
+                
+                <nav class="nav">
+                    <a href="#home" class="nav-link" data-translate="home">Home</a>
+                    <a href="#about" class="nav-link" data-translate="about">About</a>
+                    <a href="#tokenomics" class="nav-link" data-translate="tokenomics">Tokenomics</a>
+                    <a href="#treasure-hunt" class="nav-link" data-translate="treasureHunt">Treasure Hunt</a>
+                    <a href="#community" class="nav-link" data-translate="community">Community</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="en">🇺🇸 EN</button>
+                        <button class="lang-btn" data-lang="ru">🇷🇺 RU</button>
+                    </div>
+                    <button class="btn btn--primary connect-wallet-btn" data-translate="connectWallet">
+                        Connect Wallet
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="hero-icon">🗺️</span>
+                            HODLJAR
+                        </h1>
+                        <p class="hero-tagline" data-translate="tagline">HODL your way to digital treasure</p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-value" id="token-price">$0.00142</span>
+                                <span class="stat-label">Price</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value" id="market-cap">$142K</span>
+                                <span class="stat-label">Market Cap</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value" id="holders">15,847</span>
+                                <span class="stat-label">Holders</span>
+                            </div>
+                        </div>
+                        <button class="btn btn--primary btn--lg treasure-hunt-btn" data-translate="joinTreasureHunt">
+                            Join the Treasure Hunt
+                        </button>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="treasure-chest">
+                            <div class="chest-glow"></div>
+                            <span class="chest-emoji">📦✨</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title" data-translate="about">About HODLJAR</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p data-translate="aboutDesc1">HODLJAR combines the legendary "HODL" mentality with the thrill of treasure hunting in the digital age. Our gamified ecosystem rewards patient investors and active community members through on-chain treasure hunts and exclusive NFT artifacts.</p>
+                        <p data-translate="aboutDesc2">Built on Solana for lightning-fast transactions and low fees, HODLJAR creates a unique social experience where every holder becomes an explorer in search of digital riches.</p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <span class="feature-icon">🎮</span>
+                            <h3 data-translate="gamifiedTitle">Gamified Experience</h3>
+                            <p data-translate="gamifiedDesc">Complete missions, solve puzzles, and hunt for treasure to earn rewards</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">💎</span>
+                            <h3 data-translate="proofHodlTitle">Proof of HODL</h3>
+                            <p data-translate="proofHodlDesc">Seasonal rewards for loyal holders who weather market storms</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">👥</span>
+                            <h3 data-translate="communityTitle">Community Driven</h3>
+                            <p data-translate="communityDesc">Fair launch, transparent tokenomics, and community governance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tokenomics Section -->
+        <section id="tokenomics" class="tokenomics">
+            <div class="container">
+                <h2 class="section-title" data-translate="tokenomics">Tokenomics</h2>
+                <div class="tokenomics-content">
+                    <div class="tokenomics-info">
+                        <div class="supply-info">
+                            <h3 data-translate="totalSupply">Total Supply</h3>
+                            <p class="supply-number">100,000,000 HJAR</p>
+                        </div>
+                        <div class="distribution-list">
+                            <div class="distribution-item">
+                                <span class="distribution-color" style="background-color: #1FB8CD"></span>
+                                <span class="distribution-label" data-translate="communityRewards">Community Rewards & Missions</span>
+                                <span class="distribution-percent">40%</span>
+                            </div>
+                            <div class="distribution-item">
+                                <span class="distribution-color" style="background-color: #FFC185"></span>
+                                <span class="distribution-label" data-translate="liquidityExchange">Liquidity & Exchange Listings</span>
+                                <span class="distribution-percent">30%</span>
+                            </div>
+                            <div class="distribution-item">
+                                <span class="distribution-color" style="background-color: #B4413C"></span>
+                                <span class="distribution-label" data-translate="teamAllocation">Team (locked 12 months)</span>
+                                <span class="distribution-percent">15%</span>
+                            </div>
+                            <div class="distribution-item">
+                                <span class="distribution-color" style="background-color: #ECEBD5"></span>
+                                <span class="distribution-label" data-translate="marketingPartnerships">Marketing & Partnerships</span>
+                                <span class="distribution-percent">10%</span>
+                            </div>
+                            <div class="distribution-item">
+                                <span class="distribution-color" style="background-color: #5D878F"></span>
+                                <span class="distribution-label" data-translate="treasuryDevelopment">Treasury & Development</span>
+                                <span class="distribution-percent">5%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-container" style="position: relative; height: 400px;">
+                        <canvas id="tokenomicsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Treasure Hunt Section -->
+        <section id="treasure-hunt" class="treasure-hunt">
+            <div class="container">
+                <h2 class="section-title" data-translate="treasureHunt">Active Treasure Hunts</h2>
+                <div class="hunts-grid" id="hunts-grid">
+                    <!-- Hunts will be populated by JavaScript -->
+                </div>
+                
+                <div class="leaderboard">
+                    <h3 data-translate="leaderboard">Leaderboard</h3>
+                    <div class="leaderboard-list" id="leaderboard-list">
+                        <!-- Leaderboard will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section id="community" class="community">
+            <div class="container">
+                <h2 class="section-title" data-translate="community">Join Our Community</h2>
+                <div class="community-content">
+                    <div class="community-stats">
+                        <div class="community-stat">
+                            <span class="stat-number" id="community-members">23,456</span>
+                            <span class="stat-text" data-translate="communityMembers">Community Members</span>
+                        </div>
+                        <div class="community-stat">
+                            <span class="stat-number">15,847</span>
+                            <span class="stat-text" data-translate="activeHolders">Active Holders</span>
+                        </div>
+                        <div class="community-stat">
+                            <span class="stat-number">128</span>
+                            <span class="stat-text" data-translate="activeTreasureHunts">Active Treasure Hunts</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://x.com/holdjar001" target="_blank" class="social-link">
+                            <span class="social-icon">🐦</span>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <span class="social-icon">📱</span>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <span class="social-icon">💬</span>
+                            <span>Discord</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Wallet Connection Modal -->
+    <div id="wallet-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 data-translate="connectWallet">Connect Wallet</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="wallet-options">
+                    <button class="wallet-option" data-wallet="phantom">
+                        <span class="wallet-icon">👻</span>
+                        <span class="wallet-name">Phantom</span>
+                    </button>
+                    <button class="wallet-option" data-wallet="solflare">
+                        <span class="wallet-icon">🔥</span>
+                        <span class="wallet-name">Solflare</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
